@@ -1,0 +1,56 @@
+
+.page {
+    position: fixed;
+    top: 5%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+   
+  }
+  .fade-enter {
+    opacity: 0;
+    transform: scale(0.9);
+    
+    
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1000ms, transform 1000ms;
+  }
+  .fade-exit {
+    opacity: 1;
+    overflow-x: hidden;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 100ms, transform 100ms;
+  }
+  
+ .move-enter {
+    opacity: 0.01;
+    transform: translate(-40px, 0)
+}
+
+.move-enter-active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 500ms ease-in;
+}
+
+.move-exit {
+    opacity: 1;
+    transform: translate(0, 0)
+}
+
+.move-exit-active {
+    opacity: 0.01;
+    transform: translate(40px, 0);
+    transition: all 500ms ease-in;
+}
+
+.secondary-content:hover{
+  cursor: pointer;
+}
